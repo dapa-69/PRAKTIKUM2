@@ -1,0 +1,139 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Bagian header */
+header {
+    background: linear-gradient(135deg, #123c69, #247ba0);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #0b2545;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8ed1fc;
+}
+
+/* Kontainer utama */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Kartu profil dan informasi */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #247ba0;
+    padding-bottom: 8px;
+}
+
+/* Foto profil */
+.foto {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #247ba0;
+    margin: 0 auto 15px;
+}
+
+#profil {
+    text-align: center;
+}
+
+#profil h2 {
+    border-bottom: none;
+}
+
+.subtitle {
+    color: #247ba0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Data diri */
+.data-diri {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.data-diri p {
+    padding: 7px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Bagian footer */
+footer {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .foto {
+        width: 125px;
+        height: 125px;
+    }
+}
